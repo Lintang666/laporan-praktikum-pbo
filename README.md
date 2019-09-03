@@ -10,9 +10,9 @@
 
 |  |  |
 |--|--|
-| NIM | ***silakan isi nim di sini*** |
-| Nama Lengkap | ***silakan isi nama lengkap di sini*** |
-| Kelas | TI-2C / TI-2D (**silakan hapus salah satu, sesuaikan dengan kelas Anda**) |
+| NIM | ***1841720193*** |
+| Nama Lengkap | ***Lintang Kusuma Adjie*** |
+| Kelas | TI-2D |
 
 
 ## Komponen Penilaian Laporan Praktikum
@@ -44,4 +44,4 @@ Jika saya melakukan plagiasi, kecurangan, atau melanggar hak kekayaan intelektua
 
 Ttd,
 
-***(silakan isi nama lengkap di sini)***
+***(LINTANG KUSUMA ADJIE)***
