@@ -1,92 +1,151 @@
-# Laporan Praktikum #1 - Pengantar Konsep PBO
+# Laporan Praktikum #2 - Pengantar Konsep PBO
 
 ## Kompetensi
 
-(ketiklah kompetensi tiap praktikum di sini)
+1. Dapat memahami deskripsi dari class dan object 
+2. Dapat Memahami implementasi dari class 
+3. Dapat memahami implementasi dari attribute 
+4. Dapat memahami implementasi dari method 
+5. Dapat memahami implementasi dari proses instansiasi 
+6. Dapat memahami implementasi dari try-catch 
+7. Dapat memahami proses pemodelan class diagram menggunakan UML 
 
 ## Ringkasan Materi
 
-(berisi catatan penting pribadi selama praktikum berlangsung ataupun menemukan permasalahan khusus saat melakukan percobaan)
+Pemrograman Berorientasi Objek memiliki beberapa kelebihan dibanding Pemrograman terstruktur. Salah satunya adalah ketika kita mengubah kode program maka bisa dipastikan tidak akan mempengaruhi kode program lainya. Pemrograman Berorientasi Object di tandai dengan adanya sebuah objek yang membungkus state (atribut) dan method.
+
+Objek sendiri adalah suatu rangkaian program yang memiliki atribut dan method. Contoh nyata dalam kehidupan sehari-hari adalah sebuah sepeda yang memiliki roda, warna, dll.Inilah yang disebut dengan atribut, sesuatu yang dimiliki atau mencirikan suatu objek. Sepeda tersebut juga memiliki method maju, mundur, berhenti, tambah kecepatan dll. Dan inilah yang disebut dengan method, sesuatu yang bisa dilakukan oleh objek tersebut.
+
+Kemudian tentang class. Class adalah cetak biru atau rancangan dari sebuah objek.
 
 ## Percobaan
 
 ### Percobaan 1
 
-(berisi penjelasan percobaan 1. Jika ada rujukan ke file program, bisa dibuat linknya di sini.)
+1. Gambarkan desain class diagram dari studi kasus 1!, 
+![Gambar desain class diagram karyawan](img/Percobaan1Karyawan.PNG)
 
-`contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
+2. Sebutkan Class apa saja yang bisa dibuat dari studi kasus 1!, 
+    -	Class Karyawan
+    -	Class KaryawanMain
 
-![contoh screenshot](img/Sepeda.PNG)
+3.  Sebutkan atribut beserta tipe datanya yang dapat diidentifikasi dari masing-masing class dari studi kasus 1! 
+    -	Id : int
+    -	Nama : string
+    -	Jenis kelamin : string
+    -	Jabatan : string
+    -	Gaji : int
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720193Lintang.java)
-
-![contoh screenshot](img/SepedaDemo.PNG)
-
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/SepedaDemoMain1841720193Lintang.java)
+4. Sebutkan method-method yang sudah anda buat dari masing-masing class pada studi kasus 1!
+    -	tampilId()
+    -	tampilNama()
+    -	tampilJK()
+    -	tampilJabatan()
+    -	tampilGaji()
+    -	cetakData()
 
 ### Percobaan 2
 
-(berisi penjelasan percobaan 2. Jika ada rujukan ke file program, bisa dibuat linknya di sini.)
+1. Bukalah text editor atau IDE, misalnya Notepad ++ / netbeans. 
 
-`contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
+2. Ketikkan kode program berikut ini: 
+![Gambar class Mahasiswa1841720193Lintang](img/1.Mahasiswa1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\Mahasiswa1841720193Lintang.java)
 
-![contoh screenshot](img/SepedaGunung.PNG)
+3. Simpan dengan nama file Mahasiswa.java.
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/SepedaGunung1841720193Lintang.java)
+4. Untuk dapat mengakses anggota-anggota dari suatu obyek, maka harus dibuat instance dari class tersebut terlebih dahulu. Berikut ini adalah cara pengaksesan anggota- anggota dari class Mahasiswa dengan membuka file baru kemudian ketikkan kode program berikut: 
+![Gambar class TestMahasiswa1841720193Lintang](img/2.TestMahasiswa1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\TestMahasiswa1841720193Lintang.java)
 
-![contoh screenshot](img/SepedaGunungDemo.PNG)
+5. Simpan file dengan TestMahasiswa.java 
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/SepedaGunungDemo1841720193Lintang.java)
-## Pertanyaan
+6. Jalankan class TestMahasiswa 
 
-(1.Sebutkan dan jelaskan aspek-aspek yang ada pada pemrograman berorientasi objek!
-•  Kelas — kumpulan atas definisi data dan fungsi-fungsi dalam suatu unit untuk suatu tujuan tertentu. Sebagai contoh 'class of dog' adalah suatu unit yang terdiri atas definisi-definisi data dan fungsi-fungsi yang menunjuk pada berbagai macam perilaku/turunan dari anjing. Sebuah class adalah dasar dari modularitas dan struktur dalam pemrograman berorientasi object. Sebuah class secara tipikal sebaiknya dapat dikenali oleh seorang non-programmer sekalipun terkait dengan domain permasalahan yang ada, dan kode yang terdapat dalam sebuah class sebaiknya (relatif) bersifat mandiri dan independen (sebagaimana kode tersebut digunakan jika tidak menggunakan OOP). Dengan modularitas, struktur dari sebuah program akan terkait dengan aspek-aspek dalam masalah yang akan diselesaikan melalui program tersebut. Cara seperti ini akan menyederhanakan pemetaan dari masalah ke sebuah program ataupun sebaliknya. 
-•  Objek - membungkus data dan fungsi bersama menjadi suatu unit dalam sebuah program komputer; objek merupakan dasar dari modularitas dan struktur dalam sebuah program komputer berorientasi objek. 
-•  Abstraksi - Kemampuan sebuah program untuk melewati aspek informasi yang diproses olehnya, yaitu kemampuan untuk memfokus pada inti. Setiap objek dalam sistem melayani sebagai model dari "pelaku" abstrak yang dapat melakukan kerja, laporan dan perubahan keadaannya, dan berkomunikasi dengan objek lainnya dalam sistem, tanpa mengungkapkan bagaimana kelebihan ini diterapkan. Proses, fungsi atau metode dapat juga dibuat abstrak, dan beberapa teknik digunakan untuk mengembangkan sebuah pengabstrakan. 
-•  Enkapsulasi - Memastikan pengguna sebuah objek tidak dapat mengganti keadaan dalam dari sebuah objek dengan cara yang tidak layak; hanya metode dalam objek tersebut yang diberi izin untuk mengakses keadaannya. Setiap objek mengakses interface yang menyebutkan bagaimana objek lainnya dapat berinteraksi dengannya. Objek lainnya tidak akan mengetahui dan tergantung kepada representasi dalam objek tersebut. 
-•  Polimorfisme melalui pengiriman pesan. Tidak bergantung kepada pemanggilan subrutin, bahasa orientasi objek dapat mengirim pesan; metode tertentu yang berhubungan dengan sebuah pengiriman pesan tergantung kepada objek tertentu di mana pesa tersebut dikirim. Contohnya, bila sebuah burung menerima pesan "gerak cepat", dia akan menggerakan sayapnya dan terbang. Bila seekor singa menerima pesan yang sama, dia akan menggerakkan kakinya dan berlari. Keduanya menjawab sebuah pesan yang sama, namun yang sesuai dengan kemampuan hewan tersebut. Ini disebut polimorfisme karena sebuah variabel tungal dalam program dapat memegang berbagai jenis objek yang berbeda selagi program berjalan, dan teks program yang sama dapat memanggil beberapa metode yang berbeda di saat yang berbeda dalam pemanggilan yang sama. Hal ini berlawanan dengan bahasa fungsional yang mencapai polimorfisme melalui penggunaan fungsi kelas-pertama.
-2. Apa yang dimaksud dengan object dan apa bedanya dengan class?
-Class merupakan kumpulan dari suatu fungsi-fungsi yang dibuat untuk suatu tujuan tertentu. Misalnya kita akan membuat sebuah Mobil. Maka yang perlu kita buatkan adalah beberapa class yang didalamnya berisi fungsi-fungsi yang dapat membuat Mobil itu dapat berjalan sebagaimana mestinya, misalnya class Roda, class Mesin, class Kerangka Mobil, class Body Mobil dan lain lain. Class masih merupakan sebuah konsep yang belum siap digunakan.
-Sedangkan Object adalah pemanfaatan dari class yang siap untuk digunakan, misalnya kita sudah membuat class Roda, yang di dalamnya itu berisi konsep bagaimana Roda itu bisa berjalan, bagaimana Roda itu bisa berputar dan lain-lain, jika semua konsep Roda sudah oke, barulah kita akan dirubah menjadi sebuah Roda yang siap untuk dipakai. Nah itulah yang dinamakan Object Roda.
-3. Sebutkan salah satu kelebihan utama dari pemrograman berorientasi objek dibandingkan dengan pemrograman struktural!
-•	Meningkatkan produktivitas
-Class dan Object pada PBO yang dibuat untuk suatu problem masih dapat dipakai lagi untuk problem lainnya yang menggunakan objek tersebut (reusable).
-•	Kecepatan pengembangan
-karena sistem yang didevelop dengan cara yang baik dan benar pada saat menganalisis dan merancang akan menjadikan coding yang dibuat dapat diminimalisir kesalahannya.
-•	Kemudahan pemeliharaan
-Karena dengan model yang ebrorientasiobjek, pola-pola yang cenderung tetap dan stabil dapat dipisahkan dan pola-pola yang bisa saja berubah.
-•	Adanya konsistensi
-Karena sifat inheritance dan penggunaan fase yang sama pada saat menganalisis, merancang maupun coding.
-•	Meningkatkan kualitas perangkat lunak
-karena pendekatan pengembangan selalu dalam keadaan yang real dan adanya konsistensi pada saat pengembangannya, perangkat lunak yang dihasilkan akan mampu memenuhi kebutuhan pemakai serta mempunyai sedikit kesalahan.
-4. Pada class Sepeda, terdapat state/atribut apa saja?
-setMerek,gantiGear,tambahKecepatan,rem,cetakStatus
-5. Tambahkan atribut warna pada class Sepeda
+7. Jelaskan pada bagian mana proses pendeklarasian atribut pada program diatas!
 
-6. Mengapa pada saat kita membuat class SepedaGunung, kita tidak perlu membuat class nya dari nol?
-Karena sudah ke extends dengan sepeda jadi kita melanjutkan classnya Sepeda.java
+8. Jelaskan pada bagian mana proses pendeklarasian method pada program diatas! 
 
+9.  Berapa banyak objek yang di instansiasi pada program diatas! 
+    - Objek yang di instansiasi hanya 1 yaitu mhs1
 
-)
+10. Apakah yang sebenarnya dilakukan pada sintaks program “mhs1.nim=101” ? 
+    - Mengisi data nim
+
+11. Apakah yang sebenarnya dilakukan pada sintaks program “mhs1.tampilBiodata()” ? 
+    - Memanggil method tampilBiodataLintang untuk menampilkan biodata mahasiswa1841720193Lintang
+
+12. Instansiasi 2 objek lagi pada program diatas! 
+![Gambar Instalasi 2 objek](img/3.TestMahasiswa1841720193Lintang2Objek.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\TestMahasiswa1841720193Lintang.java)
+
+### Percobaan 3
+
+1. Bukalah text editor atau IDE, misalnya Notepad ++ / netbeans
+
+2. Ketikkan kode program berikut ini:
+ ![Gambar kode program barang](img/4.Barang1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\Barang1841720193Lintang.java)
+
+3. Simpan dengan nama file Barang.java 
+
+4. Untuk dapat mengakses anggota-anggota dari suatu obyek, maka harus dibuat instance dari class tersebut terlebih dahulu. Berikut ini adalah cara pengaksesan anggota- anggota dari class Barang dengan membuka file baru kemudian ketikkan kode program berikut: 
+![Gambar instance](img/5.TestBarang1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\TestBarang1841720193Lintang.java)
+
+ 
+5. Simpan dengan nama file TestBarang.java 
+
+6. Jalankan program tersebut!
+![Gambar jalankan program barang](img/4.Barang1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\TestBarang1841720193Lintang.java)
+
+7. Apakah fungsi argumen dalam suatu method? 
+    -  Untuk mengefisienkan penulisan program dengan membagi - baginya menjadi subprogram yang kecil sehingga penulisan program menjadi tertata atau terstruktur rapi.
+
+8. Ambil kesimpulan tentang kegunaan dari kata kunci return , dan kapan suatu method harus memiliki return! 
+    - Returnt digunakan untuk tipe data method int karna method tersebut harus mengembalikan nilai int
 
 ## Tugas
 
-(silakan kerjakan tugas di sini beserta `screenshot` hasil kompilasi program. Jika ada rujukan ke file program, bisa dibuat linknya di sini.)
+1. Suatu toko persewaan video game salah satu yang diolah adalah peminjaman, dimana data yang dicatat ketika ada orang yang melakukan peminjaman adalah id, nama member, nama game, dan harga yang harus dibayar. Setiap peminjaman bisa menampilkan data hasil peminjaman dan harga yang harus dibayar. Buatlah class diagram pada studi kasus diatas! 
+ 
+Penjelasan: 
+    - Harga yang harus dibayar diperoleh dari lama sewa x harga. 
+    - Diasumsikan 1x transaksi peminjaman game yang dipinjam hanya 1 game saja. 
 
-`contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
+2. Buatlah program dari class diagram yang sudah anda buat di no 1! 
+![Gambar program persewaan video game 1841720193Lintang](img/6.PersewaanGame1841720193Lintang.PNG)
+![Gambar program persewaan video game main 1841720193Lintang](img/7.PersewaanGameMain1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\PersewaanGame1841720193Lintang.java)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\PersewaanGameMain1841720193Lintang.java)
 
-![contoh screenshot](img/ApelKotaWisataBatu.PNG)
+3. Buatlah program sesuai dengan class diagram berikut ini: 
+![Gambar program lingkaran 1841720193Lintang](img/8.Lingkaran1841720193Lintang.PNG)
+![Gambar program lingkaran main 1841720193Lintang](img/9.LingkaranMain1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\Lingkaran1841720193Lintang.java)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\LingkaranMain1841720193Lintang.java)
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/ApelKotaWisataBatu1841720193Lintang.java)
+4. Buatlah program sesuai dengan class diagram berikut ini: 
+Deskripsi / Penjelasan : 
+    - Nilai atribut hargaDasar dalam Rupiah dan atribut diskon dalam % 
+    - Method hitungHargaJual() digunakan untuk menghitung harga jual dengan perhitungan berikut ini: harga jual = harga dasar – (diskon x harga dasar) 
+    - Method tampilData() digunakan untuk menampilkan nilai dari kode, namaBarang, hargaDasar, diskon dan harga jual. 
+![Gambar program lingkaran 1841720193Lintang](img/10.BarangTugas1841720193Lintang.PNG)
+![Gambar program lingkaran 1841720193Lintang](img/11.BarangTugasMain1841720193Lintang.PNG)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\BarangTugas1841720193Lintang.java)
+link kode program : [ini link ke kode program](../../src\2_Class_dan_Object\BarangTugasMain1841720193Lintang.java)
 
-![contoh screenshot](img/ApelKotaWisataBatuMain.PNG)
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/ApelKotaWisataBatuMain1841720193Lintang.java)
 
 ## Kesimpulan
 
-(Dari percobaan diatas, kita telah mendemonstrasikan bagaimana paradigma pemrograman berorientasi objek dan mengimplementasikannya kedalam program sederhana. Kita juga telah mendemonstrasikan salah satu fitur paling penting dari PBO yaitu inheritance, yaitu dalam hal membuat class SepedaGunung.  
-Kita ketahui bahwa SepedaGunung pada dasarnya adalah sama dengan Sepeda (memiliki gear, memiliki kecepatan, dapat menambah kecepatan, dapat mengerem, pindah gigi, dsb) namun ada fitur tambahan yaitu tipe suspensi. Maka kita tidak perlu membuat class SepedaGunung dari nol, kita extends atau wariskan saja dari class Sepeda, kemudian kita tinggal tambahkan fitur yang sebelumnya belum ada di class Sepeda. Inilah salah satu kelebihan PBO yang tidak ada di pemrograman struktural. )
+- Method dengan tipe data void tidak memerlukan return 
+- Method dengan tipe data int, double, float (selain void) memerlukan return  
+- Atribut dengan modifier public dapat diakses pada class manapun 
+- Atribut dengan modifier private hanya dapat diakses pada class tersebut 
+- Object dapat memanggil method, contohnya : mb1.setID("MB-001"); , mb1 adalah nama dari object 
+- Object dapat memanggil atribut, contohnya: brg1.diskon, brg1 adalah nama dari object
 
 ## Pernyataan Diri
 
