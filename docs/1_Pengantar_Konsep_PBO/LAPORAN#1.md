@@ -18,7 +18,7 @@
 
 ![contoh screenshot](img/Sepeda.PNG)
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720193Lintang.java)
+Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PB/Sepeda1841720193Lintang.java)
 
 ![contoh screenshot](img/SepedaDemo.PNG)
 
