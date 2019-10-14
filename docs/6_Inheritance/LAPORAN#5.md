@@ -1,33 +1,57 @@
-# Laporan Praktikum #5 -  5_Inheritance
+# Laporan Praktikum #7 -  7_OVERLOADING DAN OVERRIDING 
 
 Inheritance
 
 ## Kompetensi
    
-1. Memahami konsepn dasar inheritance atau pewarisan.	   
-2. Mampu membuat suatu subclass dari suatu superclass tertentu.	   
-3. Mampu mengimplementasikan konsep single dan multilevel inheritance.	   
-4. Mampu membuat objek dari suatu subclass dan melakukan pengaksesan terhadap atribut dan method baik yang dimiliki sendiri atau turunan dari superclassnya.
+Setelah menempuh pokok bahasan ini, mahasiswa mampu : a. Memahami konsep overloading dan overriding, 
+b.	Memahami perbedaan overloading dan overriding, 
+c.	Ketepatan dalam mengidentifikasi method overriding dan overloading 
+d.	Ketepatan dalam mempraktekkan instruksi pada jobsheet 
+e.	Mengimplementasikan method overloading dan overriding. 
 
 ## Ringkasan Materi
 
-Inheritance atau pewarisan sifat merupakan suatu cara untuk menurunkan suatu class yang lebih umum menjadi suatu class yang lebih spesifik. Inheritance adalah salah satu ciri utama suatu bahasa program yang berorientasi pada objek. Inti dari pewarisan adalah sifat reusable dari konsep object oriented. Setiap subclass akan “mewarisi” sifat dari superclass selama bersifat protected ataupun public.
+Overloading  adalah menuliskan kembali method dengan nama yang sama pada suatu class. Tujuannya dapat memudahkan penggunaan/pemanggilan method dengan fungsionalitas yang mirip. 
+Untuk aturan pendeklarasian method Overloading sebagai berikut: 
+    	Nama method harus sama. 
+    	Daftar parameter harus berbeda. 
+    	Return type boleh sama, juga boleh berbeda. 
+Ada beberapa daftar parameter pada overloading dapat dilihat sebagai berikut: 
+    	Perbedaan daftar parameter bukan hanya terjadi pada perbedaan banyaknya parameter, tetapi juga urutan darai parameter tersebut. 
+    	Misalnya saja dua buah parameter berikut ini: 
+o Function_member (int x, string n) o Function_member (String n, int x) 
+    	Dua parameter tersebut juga di anggap berbeda daftar parameternya. 
+    	Daftar parameter tidak terkait dengan penamaan variabel yang ada dalam parameter. 
+    	Misalnya saja 2 daftar parameter berikut : 
+o function_member(int x) o function_member(int y)  Dua daftar parameter diatas dianggap sama karena yang berbeda hanya penamaan variable parameternya saja. 
+Overloading juga bisa terjadi antara parent class dengan subclass-nya jika memenuhi ketiga syarat overload. Ada beberapa aturan overloading yaitu: 
+    	Primitive widening conversion didahulukan dalam overloading dibandingkan boxing dan var args.  
+    	Kita tidak dapat melakukan proses widening dari tipe wrapper ke tipe wrapper lainnya (mengubah Integer ke Long). 
+    	Kita tidak dapat melakukan proses widening dilanjutkan boxing (dari int menjadi Long) 
+    	Kita dapat melakukan boxing dilanjutkan dengan widening (int dapat menjadi Object melalui Integer) 
+    	Kita dapat menggabungkan var args dengan salah satu yaitu widening atau boxing  
+ 
+Overriding  adalah Sublass yang berusaha memodifkasi tingkah laku yang diwarisi dari superclass. Tujuannya subclass dapat memiliki tingkah laku yang lebih spesifik sehingga dapat dilakukan dengan cara mendeklarasikan kembali method milik parent class di subclass. 
+Deklarasi method pada subclass harus sama dengan yang terdapat di super class. 
+Kesamaan pada: 
+    	Nama 
+    	Return type (untuk return type : class A atau merupakan subclass dari class A) 
+    	Daftar parameter (jumlah, tipe dan urutan) 
+Sehingga method pada parent class disebut overridden method dan method pada subclass disebut overriding method. Ada beberapa aturan method didalam overriding: 
+    	Mode akses overriding method harus sama atau lebih luas dari pada overridden method. 
+    	Subclass hanya boleh meng-override method superclass satu kali saja, tidak boleh ada lebih dari satu method pada kelas yang sama persis. 
+    	Overriding method tidak boleh throw checked exceptions yang tidak dideklarasikan oleh overridden method. 
 
 ## Praktikum
 
-### Percobaan 1 (Extends)
+### Percobaan 1
    
-1. Buatlah sebuah class parent/superclass dengan nama ClassA.java	   
- 	   
-2. Buatlah sebuah class anak/subclass dengan nama ClassB.java	 
- 	   
-3. Buatlah class Percobaan1.java untuk menjalankan program diatas!	   
- 	   
-4. Jalankan program diatas, kemudian amati apa yang terjadi!
+Untuk kasus contoh berikut ini, terdapat tiga kelas, yaitu Karyawan, Manager, dan Staff. Class Karyawan merupakan superclass dari Manager dan Staff dimana subclass Manager dan Staff memiliki method untuk menghitung gaji yang berbeda. 
 
-1. Ketikkan kode class Extends dibawah ini. 
-![Gambar Class ClassA ](img/1_Percobaan1classa.PNG)
-link kode program : [ini link ke kode program](../../src\6_Inheritance\percobaan1_1841720193lintang\ClassA1841720193Lintang.java)
+1. Ketikkan kode class Karyawan dibawah ini. 
+![Gambar Class karyawan ](img/1.percobaan1karyawan.PNG)
+link kode program : [ini link ke kode program](../../src\7_OVERLOADING DAN OVERRIDING \percobaan1_1841720193lintang\ClassA1841720193Lintang.java)
 
 2. Ketikkan kode class Extends dibawah ini. 
 ![Gambar Class ClassB ](img/2_Percobaan1classb.PNG)
